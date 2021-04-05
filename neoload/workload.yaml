@@ -1,0 +1,17 @@
+workloads:
+- teststrategy: performance
+  script:
+    repository: https://github.com/santoshrole-tracfone/keptn-project.git
+    project:
+    - path: /neoload/frontend_basic.yaml
+    - path: /neolaod/sampleProject_Keptn/sampleProject_Keptn.nlp
+  description: FrontEnd
+  properties:
+    scenario: KeptnScenario
+    constant_variables:
+    - name: server_host
+      value: frontend.easytravel-dev.svc
+  infrastructure:
+    managedbyKeptn: false
+    numberOfMachine: 2
+    zoneId : 4KBFT
