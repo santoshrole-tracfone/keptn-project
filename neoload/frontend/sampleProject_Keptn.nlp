@@ -1,0 +1,13 @@
+# Project description file
+
+project.name=sampleProject_Keptn
+project.version=8.2
+project.original.version=8.2
+product.name=NeoLoad
+product.original.name=NeoLoad
+product.version=7.8.1
+product.original.version=7.8.1
+project.id=b274b02d-dbaf-41f3-bac8-942f516d53e8
+project.config.path=config.zip
+project.config.storage=ZIP
+team.server.enabled=false
