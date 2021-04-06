@@ -2,16 +2,16 @@ name: Frontend_BasicCheck_neoload
 variables:
 - constant:
     name: basicpath
-    value: CHECK_TO_REPLACE
+    value: https://github.com/santoshrole-tracfone/keptn-project.git
 - constant:
     name: tagurl
-    value: TAGURL_TO_REPLACE
+    value: http://10.80.20.126:8080/
 - constant:
     name: server_host
-    value: HOST_TO_REPLACE
+    value: 10.80.20.126
 - constant:
     name: server_port
-    value: PORT_TO_REPLACE
+    value: 8080
 servers:
 - name: frontEnd_host
   host: ${server_host}
@@ -44,26 +44,26 @@ user_paths:
             method: GET
     - think_time: 250ms
     - transaction:
-        name: Customer
+        name: Specialoffer
         steps:
         - request:
-            url: /customer/list.hmtl
+            url: /special-offers.jsp
             server: frontEnd_host
             method: GET
     - think_time: 250ms
     - transaction:
-        name: Catalog
+        name: About
         steps:
         - request:
-            url: /catalog/list.hmtl
+            url: /about-orange.jsf
             server: frontEnd_host
             method: GET
     - think_time: 250ms
     - transaction:
-        name: Order
+        name: Contact
         steps:
         - request:
-            url: /order/
+            url: /contact-orange.jsf
             server: frontEnd_host
             method: GET
 populations:
