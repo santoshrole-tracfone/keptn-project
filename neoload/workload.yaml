@@ -3,8 +3,8 @@ workloads:
   script:
     repository: https://github.com/santoshrole-tracfone/keptn-project.git
     project:
-    - path: /neoload/frontend_basic.yaml
-    - path: /neolaod/sampleProject_Keptn/sampleProject_Keptn.nlp
+    - path: /frontend_basic.yaml
+    - path: /sampleProject_Keptn/sampleProject_Keptn.nlp
   description: FrontEnd
   properties:
     scenario: KeptnScenario
